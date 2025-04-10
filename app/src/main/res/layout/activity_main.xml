@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saree Classifier"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/subtle_image_bg"
+        android:contentDescription="Selected image" />
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prediction:"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:textColor="#2F2F2F"
+        android:textAlignment="center"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Bottom Left Buttons -->
+    <LinearLayout
+        android:id="@+id/leftButtonGroup"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/cropImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crop Image"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <!-- Bottom Right Buttons -->
+    <LinearLayout
+        android:id="@+id/rightButtonGroup"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnRecolorImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recolor Image"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnUndoRecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Undo color"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

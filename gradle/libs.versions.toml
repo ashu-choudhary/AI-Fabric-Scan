@@ -1,0 +1,70 @@
+[versions]
+agp = "8.9.1"
+ambilwarna = "2.0.1"
+androidxAppcompat = "1.7.0"
+androidxCoreKtx = "1.9.0"
+appcompatVersion = "1.10.1"
+colorpicker = "0.0.13"
+colorpickerLibrary = "1.1.10"
+colorpickerVersion = "0.0.15"
+constraintlayoutVersion = "2.2.1"
+gradle = "8.2.2"
+kotlin = "2.0.21"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2025.03.01"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+materialVersion = "1.12.0"
+tensorflowLite = "2.16.1"
+tensorflowLiteSupport = "2.9.0"
+tensorflowLiteVersion = "2.16.1"
+tensorflowTensorflowLite = "2.16.1"
+tensorflowTensorflowLiteVersion = "2.16.1"
+ucrop = "2.2.8"
+
+[libraries]
+ambilwarna = { module = "yuku.ambilwarna:ambilwarna", version.ref = "ambilwarna" }
+androidx-appcompat-v1101 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+androidx-constraintlayout-v214 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-core = { module = "androidx.core:core", version.ref = "coreKtx" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.7.8" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v180 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-lite-support = { module = "org.tensorflow:tensorflow-lite-support", version.ref = "tensorflowLiteSupport" }
+tensorflow-lite-task-vision = { module = "org.tensorflow:tensorflow-lite-task-vision", version = "0.4.4" }
+tensorflow-lite-v2120 = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLiteVersion" }
+tensorflow-lite-v2140 = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowTensorflowLiteVersion" }
+tensorflow-lite-v290 = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowTensorflowLite" }
+ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
